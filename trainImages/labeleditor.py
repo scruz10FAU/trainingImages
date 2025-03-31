@@ -121,7 +121,7 @@ def clear_boxes():
     global boxes
     # Remove rectangles from the canvas
     for box in boxes:
-        canvas.delete(box[5])
+        canvas.delete(box[5])list
     boxes = []
 
     # Remove the corresponding label file
