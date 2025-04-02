@@ -8,8 +8,8 @@ image_dir = 'images'
 label_dir = 'labels'
 class_id = 0  # default class for all boxes
 
-bad_images = ["img48.jpg", "img49.jpg", "img50.jpg", "img53.jpg", "img54.jpg", "img55.jpg", "img57.jpg", "img58.jpg", "img59.jpg", "img65.jpg", "img66.jpg", "img67.jpg","img79.jpg","img80.jpg", "img81.jpg", "img82.jpg", "img84.jpg", "img85.jpg", "img86.jpg","img99.jpg"]
-
+bad_images = ['img418.jpg','img419.jpg','img420.jpg',
+              'img423.jpg', 'img424.jpg', 'img425.jpg', 'img429.jpg', 'img593.jpg']
 #image_files = sorted([f for f in os.listdir(image_dir) if f.endswith(('.jpg', '.png'))])
 image_files = [fname for fname in bad_images]
 print(image_files)
@@ -121,7 +121,7 @@ def clear_boxes():
     global boxes
     # Remove rectangles from the canvas
     for box in boxes:
-        canvas.delete(box[5])list
+        canvas.delete(box[5])
     boxes = []
 
     # Remove the corresponding label file
