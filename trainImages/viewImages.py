@@ -18,7 +18,7 @@ total_batches = math.ceil(total_images / batch_size)
 
 print(f"📦 Total images: {total_images} | Batches: {total_batches}")
 
-for i in range(total_batches):
+for i in range(6, total_batches):
     # Choose which batch to view
     current_batch = i  # 🔁 Change this to 1, 2, 3... to see next grid
 
@@ -29,6 +29,8 @@ for i in range(total_batches):
 
     # Plot
     fig, axes = plt.subplots(rows, cols, figsize=(15, 15))
+    fig.canvas.manager.set_window_title(f"Image Grid - Batch {i + 1} of {total_batches}")
+
     axes = axes.flatten()
 
     for ax, img_path in zip(axes, batch_files):
