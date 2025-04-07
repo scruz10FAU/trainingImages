@@ -8,7 +8,7 @@ image_dir = 'images'
 label_dir = 'labels'
 class_id = 0  # default class for all boxes
 
-bad_images = ['img418.jpg','img421.jpg', 'img426.jpg', 'img427.jpg', 'img428.jpg']
+bad_images = ['img0.jpg','img34.jpg', 'img44.jpg', 'img45.jpg', 'img72.jpg', 'img73.jpg', 'img145.jpg']
 #image_files = sorted([f for f in os.listdir(image_dir) if f.endswith(('.jpg', '.png'))])
 image_files = [fname for fname in bad_images]
 print(image_files)
