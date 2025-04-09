@@ -8,7 +8,7 @@ image_dir = 'trainCars/images'
 label_dir = 'trainCars/labels'
 class_id = 0  # default class for all boxes
 
-bad_images = ['car_img283.jpg']
+bad_images = ['car_img297.jpg', 'car_img298.jpg', 'car_img300.jpg', 'car_img304.jpg']
 #image_files = sorted([f for f in os.listdir(image_dir) if f.endswith(('.jpg', '.png'))])
 image_files = [fname for fname in bad_images]
 print(image_files)
