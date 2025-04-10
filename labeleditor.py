@@ -4,13 +4,13 @@ from PIL import Image, ImageTk
 import os
 
 # Config
-image_dir = 'trainCars/images'
-label_dir = 'trainCars/labels'
+image_dir = 'trainImages/images'
+label_dir = 'trainImages/labels'
 class_id = 0  # default class for all boxes
 
-bad_images = ['car_img297.jpg', 'car_img298.jpg', 'car_img300.jpg', 'car_img304.jpg']
-#image_files = sorted([f for f in os.listdir(image_dir) if f.endswith(('.jpg', '.png'))])
-image_files = [fname for fname in bad_images]
+#bad_images = ['img2280.jpg', 'img2290.jpg', 'img2300.jpg', 'img2310.jpg']
+image_files = sorted([f for f in os.listdir(image_dir) if f.endswith(('.jpg', '.png'))])
+#image_files = [fname for fname in bad_images]
 print(image_files)
 index = 0
 boxes = []
