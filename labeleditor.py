@@ -4,8 +4,8 @@ from PIL import Image, ImageTk
 import os
 
 # Config
-image_dir = 'testImages/images'
-label_dir = 'testImages/labels'
+image_dir = 'trainImage416/images'
+label_dir = 'trainImage416/labels'
 class_id = 0  # default class for all boxes
 
 #bad_images = ['img2280.jpg', 'img2290.jpg', 'img2300.jpg', 'img2310.jpg']
@@ -42,6 +42,7 @@ def load_image(idx):
     
     # Load existing boxes if label exists
     name = os.path.splitext(image_files[idx])[0]
+    root.title(f"YOLO Label Editor — {image_files[idx]}")
     label_path = os.path.join(label_dir, f"{name}.txt")
     if os.path.exists(label_path):
         with open(label_path, 'r') as f:
