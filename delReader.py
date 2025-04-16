@@ -1,7 +1,7 @@
 import os
 
 # Set these paths
-image_folder = 'trainText/images'
+image_folder = 'trainText416/images'
 text_file_path = 'trainText/full_list.txt'
 
 # Get current (remaining) image filenames in the folder
