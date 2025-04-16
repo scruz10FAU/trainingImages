@@ -18,7 +18,7 @@ total_batches = math.ceil(total_images / batch_size)
 
 print(f"📦 Total images: {total_images} | Batches: {total_batches}")
 
-for i in range(8, total_batches):
+for i in range(total_batches):
     # Choose which batch to view
     current_batch = i  # 🔁 Change this to 1, 2, 3... to see next grid
 
