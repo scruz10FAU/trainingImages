@@ -4,8 +4,8 @@ from PIL import Image, ImageTk
 import os
 
 # Config
-image_dir = 'trainImages/images'
-label_dir = 'trainImages/labels'
+image_dir = 'testImages/images'
+label_dir = 'testImages/labels'
 class_id = 0  # default class for all boxes
 
 #bad_images = ['img2280.jpg', 'img2290.jpg', 'img2300.jpg', 'img2310.jpg']

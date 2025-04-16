@@ -3,7 +3,7 @@ from PIL import Image
 import imagehash
 
 # Folder containing the images
-folder_path = "trainImages/images"
+folder_path = "testImages/images"
 
 # Hash dictionary
 hashes = {}

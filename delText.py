@@ -1,8 +1,8 @@
 import os
 
 # Set the paths
-image_folder = "trainImages/images"
-text_folder = "trainImages/labels"
+image_folder = "testImages/images"
+text_folder = "testImages/labels"
 
 # Define valid image extensions
 image_extensions = ['.jpg', '.jpeg', '.png', '.bmp']
