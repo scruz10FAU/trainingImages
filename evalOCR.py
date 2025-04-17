@@ -7,9 +7,10 @@ from PIL import Image
 import numpy as np
 from difflib import SequenceMatcher
 import statistics
+import random
 
 # ── CONFIG ────────────────────────────────────────────────────────────────
-label_list_file = "./trainText416/full_list.txt"
+label_list_file = "./trainText417/full_list.txt"
 use_gpu      = False   # True if you have a GPU available
 # ──────────────────────────────────────────────────────────────────────────
 
@@ -217,6 +218,7 @@ print_stats(blur_list, "Blur Metrics")
 # 6) Optional: collage of first few failures in each bucket
 def show_collage(failed_list, title):
     n = min(len(failed_list), 9)
+    failed_list = random.sample(failed_list, n)
     cols = 3; rows = math.ceil(n/cols)
     fig, axs = plt.subplots(rows, cols, figsize=(4*cols,3*rows))
     for ax,(p,pred,gt,blur,res) in zip(axs.flatten(), failed_list[:n]):
