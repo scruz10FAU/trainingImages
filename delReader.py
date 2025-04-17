@@ -1,8 +1,8 @@
 import os
 
 # Set these paths
-image_folder = 'trainText416/images'
-text_file_path = 'trainText/full_list.txt'
+image_folder = 'C:/Users/SGarcia/Desktop/LPR_Programs/LPR_final_Codes/trainText/images'
+text_file_path = 'C:/Users/SGarcia/Desktop/LPR_Programs/LPR_final_Codes/trainText/full_list.txt'
 
 # Get current (remaining) image filenames in the folder
 remaining_images = set(os.listdir(image_folder))
