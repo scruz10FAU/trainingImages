@@ -4,12 +4,12 @@ from PIL import Image, ImageTk
 import os
 
 # Config
-image_dir = 'trainImage416/images'
-label_dir = 'trainImage416/labels'
+image_dir = 'trainImages/images'
+label_dir = 'trainImages/labels'
 class_id = 0  # default class for all boxes
 
 #bad_images = ['img2280.jpg', 'img2290.jpg', 'img2300.jpg', 'img2310.jpg']
-image_files = sorted([f for f in os.listdir(image_dir) if f.endswith(('.jpg', '.png')) and f.startswith(('RC', 'car'))])
+image_files = sorted([f for f in os.listdir(image_dir) if f.endswith(('.jpg', '.png'))])
 #image_files = [fname for fname in bad_images]
 print(image_files)
 index = 0
