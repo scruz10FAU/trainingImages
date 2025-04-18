@@ -10,7 +10,7 @@ import statistics
 import random
 
 # ── CONFIG ────────────────────────────────────────────────────────────────
-label_list_file = "./trainText417/full_list.txt"
+label_list_file = "./train_list.txt"
 use_gpu      = False   # True if you have a GPU available
 # ──────────────────────────────────────────────────────────────────────────
 
@@ -64,7 +64,7 @@ def upscale_img(image):
     sr = cv2.dnn_superres.DnnSuperResImpl_create()
 
     #Load the ESPCN model
-    model_path = "ESPCN_x4.pb"
+    model_path = "C:/Users/SGarcia/Desktop/trainingImages/ESPCN_x4.pb"
     sr.readModel(model_path)
     sr.setModel("espcn", 4)  # Model name and scale
 
@@ -104,7 +104,8 @@ with open(label_list_file, "r", encoding="utf-8") as f:
         img_path = (
             img_rel
             if os.path.isabs(img_rel)
-            else os.path.join(os.path.dirname(label_list_file), "images", img_rel)
+            #else os.path.join(os.path.dirname(label_list_file), "images", img_rel)
+            else os.path.join(os.path.dirname(label_list_file), img_rel)
         )
 
         # 0) Load original image for blur check (and later display)
